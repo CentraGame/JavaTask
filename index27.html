@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Пример безконечного цикла с приреванием break</title>
+    </head>
+    <body>
+        <script>
+            let i=0;
+            let a = prompt('Введите число:');
+            while (a <= 0 || isNaN(+a)) {
+      alert('Неверный формат введенного значения. Необходимо ввести число больше 0.\nДавайте попробуем ещё раз!')
+      a = prompt('Введите значение переменной "a":', '').replace(/\s+/g, '');
+    }
+            while(1) {
+                i++;
+                if (i==a)break;
+                alert(i)
+            }
+            alert('Последняя i = '+ i ); // 5 (*)
+        </script>
+    </body>
+</html>

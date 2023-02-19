@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Пример цикла с прекращением итерации директивой continue</title>
+    </head>
+    <body>
+        <script>
+            let a = prompt('Введите число:');
+            while (a <= 0 || isNaN(+a)) {
+      alert('Неверный формат введенного значения. Необходимо ввести число больше 0.\nДавайте попробуем ещё раз!')
+      a = prompt('Введите значение переменной "a":', '').replace(/\s+/g, '');
+    }
+        for (let i = 0; i <= a; i++) {
+            if (i % 2 == 0) continue;
+            alert(i)
+        }
+        </script>
+    </body>
+</html>

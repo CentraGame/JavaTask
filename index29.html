@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Месяцы</title>
+    </head>
+    <body>
+        <script>
+            let a = prompt('Введите месяц или номер месяца');
+            switch(a) {
+                case "12":
+                alert('Зима');
+                break;
+                case "1":
+                alert('Зима');
+                break;
+                case "2":
+                alert('Зима');
+                break;
+                case "Декабрь":
+                alert('Зима');
+                break;
+                case "Январь":
+                alert('Зима');
+                break;
+                case "Февраль":
+                alert('Зима');
+                break;
+                case "3":
+                alert('Весна');
+                break;
+                case "4":
+                alert('Весна');
+                break;
+                case "5":
+                alert('Весна');
+                break;
+                case "Март":
+                alert('Весна');
+                break;
+                case "Апрель":
+                alert('Весна');
+                break;
+                case "Май":
+                alert('Весна');
+                break;
+                case "6":
+                alert('Лето');
+                break;
+                case "7":
+                alert('Лето');
+                break;
+                case "8":
+                alert('Лето');
+                break;
+                case "Июнь":
+                alert('Лето');
+                break;
+                case "Июль":
+                alert('Лето');
+                break;
+                case "Август":
+                alert('Лето');
+                break;
+                case "9":
+                alert('Осень. В 30-ый день этого месяца у меня день рождения');
+                break;
+                case "10":
+                alert('Осень');
+                break;
+                case "11":
+                alert('Осень');
+                break;
+                case "Сентябрь":
+                alert('Осень. В 30-ый день этого месяца у меня день рождения');
+                break;
+                case "Октябрь":
+                alert('Осень');
+                break;
+                case "Ноябрь":
+                alert('Осень');
+                break;
+            }
+            while (a < 13 || isNaN(+a)) {
+      alert('Неверный формат введенного значения. Необходимо ввести месяц или номер месяца. \nДавайте попробуем ещё раз!')
+      a = prompt('Введите месяц или номер месяца:', '').replace(/\s+/g, '');
+    }
+        </script>
+    </body>
+</html>
