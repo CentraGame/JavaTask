@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function showMassage(from, text) {
+                from = '**' + from + '**';// (1), красиво оформили from
+                alert(from + '\n\n' + text);
+            }
+            let from = 'Обама Джорджc Трампович', msg = 'Привет!'; // (2)
+            showMassage(from, msg);// значения будут скопированы в параметры
+            alert(from);//перезапись в строке (1) не повлияет на внешнюю переменную
+        </script>
+    </body>
+</html>
