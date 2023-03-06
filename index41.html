@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Пример 1 с массивами</title>
+</head>
+<body>
+<script type="text/javascript">
+    let a = Number(prompt(''));
+    while (a <= 0 || isNaN(+a)) {
+      alert('Неверный формат введенного значения. Необходимо ввести любое числo больше нуля.\nДавайте попробуем ещё раз!');
+      let a = Number(prompt(''));
+    }
+    const fill = (arraySize, value) => new Array(arraySize).fill(value);
+    const data = a;
+    let valueToFill = prompt('');
+    console.log(fill(data, valueToFill))
+</script>   
+</body>
+</html>
